@@ -1,0 +1,33 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DuongHaoNika/TodoList.git"
+  },
+  "keywords": [
+    "todolist"
+  ],
+  "author": "Duong Quang Hao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuongHaoNika/TodoList/issues"
+  },
+  "homepage": "https://github.com/DuongHaoNika/TodoList#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^8.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
