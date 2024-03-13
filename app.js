@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import route from "./routes/index.js"
 import path from "path"
+import methodOverride from "method-override"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -14,6 +15,7 @@ const app = express()
 const port = 3000
 
 app.use(expressEjsLayouts);
+app.use(methodOverride('_method'))
 
 db.connect()
 appConfig(app, __dirname)

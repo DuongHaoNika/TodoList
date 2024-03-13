@@ -1,0 +1,10 @@
+<div class="container mt-5">
+    <h4 class="mt-5" style="text-align: center;">Update Todo List</h4>
+
+    <form method="POST" action="/update/<%= todo._id %>?_method=PUT" class="d-flex mt-5">
+        <input type="text" name="name" value="<%= todo.name %>" class="form-control" placeholder="Enter Todo">
+        <input type="submit" value="Update" class="btn btn-md btn-primary mx-2">
+    </form>
+</div>
+
+
